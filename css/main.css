@@ -1,1 +1,124 @@
-/*Add your CSS*/
+*{
+  font-family: 'Cantarell', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.preload{
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.size-preload{
+  font-size: 80px;
+}
+.logo{
+  width: 300px;
+  height: auto;
+  text-shadow: -1px 2px 2px #ffffff;
+  color: #F6BA0E;
+  text-align: center;
+}
+.size-nav{
+  font-size: 45px;
+}
+.animationLogo{
+  animation-name: logAnimation;
+  animation-timing-function: linear;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  position: absolute;
+}
+.logo-purple{
+  color: #912E71;
+}
+@keyframes logAnimation {
+  from{
+    transform: rotateY(0deg);
+    moz-transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(360deg);
+    moz-transform: rotateY(360deg);
+  }
+}
+nav{
+  width: 100%;
+  height: 70px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body{
+  background-color: #8F9DA7;
+}
+.map{
+  width: 100%;
+  height: 300px;
+  position: relative;
+  z-index: 2;
+}
+.text-conteiner{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.text-conteiner h3 {
+  font-size: 30px;
+  color: black;
+  font-weight: 700;
+}
+.filter-conteiner{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.filter-conteiner input{
+  border: 2px solid black;
+  background: transparent;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+::placeholder{
+  color: black;
+}
+.search i {
+  font-size: 30px;
+  color: black;
+}
+.filter-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter-list li{
+  list-style-type: none;
+  border: 2px black solid;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #D2A7D5;
+}
+.filter-list li a{
+  margin: 3px;
+}
+.conteiner-img{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
